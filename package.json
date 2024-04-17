@@ -1,0 +1,25 @@
+{
+  "name": "fishtail-college-website",
+  "version": "1.0.0",
+  "description": "Creating fishtail college's website.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "fishtail-college",
+    "website",
+    "frontend"
+  ],
+  "author": "Kenab Kushal K.C.",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss-cli": "^11.0.0"
+  }
+}

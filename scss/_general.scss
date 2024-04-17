@@ -1,0 +1,67 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.text-accent {
+  color: $accent;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.bullet {
+  display: block;
+  margin-right: 2.6rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: $accent;
+  border: 0.5rem solid $accent-tint;
+}
+
+// GRID SYSTEM
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+// SECTION PADDING
+
+.hero_section--padding {
+  padding-block: 16.9rem;
+}
+
+.apply_section--padding {
+  padding-block: 12rem 16rem;
+}
+
+.partners_section--padding {
+  padding-block: 16rem;
+}

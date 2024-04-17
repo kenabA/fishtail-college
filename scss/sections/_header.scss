@@ -1,0 +1,35 @@
+@import "../colors";
+
+.header {
+  box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08); // As I want these to be fixed, I am not using REM
+  &_content {
+    padding-block: 2rem;
+    &--img {
+      width: 12.4rem;
+      height: auto;
+    }
+    &--btn {
+      display: flex;
+      gap: 2rem;
+    }
+    &--nav {
+      &-right {
+        align-items: center;
+        display: flex;
+        gap: 8.5rem;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+    &--menu {
+      display: flex;
+      font-size: 1.6rem;
+      gap: 5.8rem;
+      list-style: none;
+      &-link {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+}

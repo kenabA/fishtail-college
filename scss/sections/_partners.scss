@@ -1,0 +1,53 @@
+@import "../colors";
+
+.partners {
+  position: relative;
+  &_globe {
+    &--wrapper {
+      position: absolute;
+      top: 0%;
+      left: 5%;
+      max-width: 75rem;
+      height: auto;
+      img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  background-color: $white-1;
+  .container-partners {
+    max-width: 120rem;
+    margin-inline: auto;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &--logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-row-gap: 4.5rem;
+      grid-column-gap: 7rem;
+      &-wrapper {
+        max-width: 9rem;
+        max-height: auto;
+        img {
+          object-fit: contain;
+          object-position: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    &--details {
+      &-p {
+        font-size: 1.6rem;
+        color: $black-2;
+        max-width: 42.6rem;
+        line-height: 1.6rem * 1.6;
+      }
+    }
+  }
+}

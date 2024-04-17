@@ -1,0 +1,108 @@
+@import "../colors";
+
+.apply {
+  position: relative;
+  &_squiggle {
+    &--wrapper {
+      position: absolute;
+      right: 5%;
+      top: 46%;
+      max-width: 6.6rem;
+      max-height: auto;
+      img {
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .container-apply {
+    max-width: 120rem;
+    margin-inline: auto;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10rem;
+    &--cta {
+      display: flex;
+      gap: 8rem;
+      &-details {
+        h2 {
+          margin-bottom: 2.8rem;
+        }
+        p {
+          max-width: 49.5rem;
+          color: $black-2;
+          font-size: 1.6rem;
+          line-height: 1.6rem * 1.6;
+          font-weight: 400;
+          margin-bottom: 2.8rem;
+        }
+        ul {
+          display: flex;
+          gap: 1.4rem;
+          list-style: none;
+          flex-direction: column;
+          margin-bottom: 4rem;
+          li {
+            display: flex;
+            align-items: center;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-imgWr {
+        max-width: 57.1rem;
+        max-height: auto;
+        img {
+          object-position: center;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &--cards {
+      display: flex;
+      gap: 3rem;
+    }
+    &--card {
+      border-radius: 1.2rem;
+      padding: 5rem 7.4rem;
+      background-color: $white-2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      &-imgWr {
+        max-width: 5rem;
+        height: auto;
+        margin-bottom: 1.8rem;
+
+        img {
+          object-position: center;
+          aspect-ratio: 1;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-texts {
+        :nth-child(1) {
+          font-size: 3.6rem;
+          margin-bottom: 2.2rem;
+        }
+        :nth-child(2) {
+          color: $black-2;
+          font-size: 1.8rem;
+          text-wrap: nowrap;
+        }
+      }
+    }
+  }
+}

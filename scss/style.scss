@@ -1,0 +1,13 @@
+@use "./general";
+@use "./queries";
+@use "./font-awesome";
+
+// COMPONENTS
+@use "components/typography";
+@use "components/buttons";
+
+// SECTIONS
+@use "sections/header";
+@use "sections/hero";
+@use "sections/apply";
+@use "sections/partners";

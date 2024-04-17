@@ -1,0 +1,32 @@
+@import "../colors";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  color: $black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.text_alpha {
+  font-size: 6.4rem;
+  margin-bottom: 2rem;
+  &--sub-txt {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    color: $black-1;
+  }
+  &--span {
+    color: $black-1;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.text_beta {
+  font-size: 3.6rem;
+  line-height: 3.6rem * 1.4;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}

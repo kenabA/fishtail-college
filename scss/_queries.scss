@@ -1,0 +1,16 @@
+// ABOVE 1920 PX
+@media (min-width: 120em) {
+  html {
+    font-size: 62.5%;
+  }
+  .container {
+    max-width: 164rem !important;
+    margin: auto;
+  }
+}
+
+@media (max-width: 120em) {
+  html {
+    font-size: 44.25% !important;
+  }
+}
