@@ -1,0 +1,60 @@
+@import "../colors";
+
+.features {
+  position: relative;
+  background-color: $primary;
+  &_circle {
+    &--wrapper {
+      position: absolute;
+      bottom: 0%;
+      left: 12%;
+      max-width: 3rem;
+      max-height: auto;
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &_half-circle {
+    &--wrapper {
+      position: absolute;
+      top: 0%;
+      right: 40%;
+      max-width: 18rem;
+      max-height: auto;
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .container-features {
+    max-width: 113rem;
+    margin-inline: auto;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &--detail {
+      &-p {
+        color: $white;
+        font-size: 2.4rem;
+        font-weight: lighter;
+      }
+      &-p-last {
+        position: relative;
+        &::after {
+          position: absolute;
+          top: -25%;
+          right: 20%;
+          content: "+";
+        }
+      }
+    }
+  }
+}

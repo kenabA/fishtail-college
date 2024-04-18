@@ -1,0 +1,42 @@
+@import "../colors";
+
+.cta {
+  .container-cta {
+    max-width: 120rem;
+    margin-inline: auto;
+  }
+  &_content {
+    display: grid;
+    grid-row-gap: 16rem;
+    grid-template-columns: 1fr;
+    &--details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      gap: 8rem;
+
+      h2 {
+        margin-bottom: 2.8rem;
+      }
+      &-p {
+        max-width: 55rem;
+        color: $black-2;
+        font-size: 1.6rem;
+        line-height: 1.6rem * 1.6;
+        font-weight: lighter;
+        margin-bottom: 4rem;
+      }
+      &-imgWr {
+        max-width: 66rem;
+        max-height: auto;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+}

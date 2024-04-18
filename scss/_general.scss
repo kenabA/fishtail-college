@@ -20,6 +20,10 @@
   display: flex;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .align-self-end {
   align-self: flex-end;
 }
@@ -64,4 +68,16 @@
 
 .partners_section--padding {
   padding-block: 16rem;
+}
+
+.features_section--padding {
+  padding-block: 4.6rem;
+}
+
+.cta_section--padding {
+  padding-block: 16rem 12rem;
+}
+
+.news_section--padding {
+  padding-block: 12rem 16rem;
 }

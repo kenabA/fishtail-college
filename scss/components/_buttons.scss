@@ -25,3 +25,13 @@
   border-radius: 0.4rem;
   border: 0.1rem solid #edeef2;
 }
+
+.btn-quaternary {
+  font-size: 1.6rem;
+  background-color: unset;
+  padding: 2rem 4.2rem;
+  border-radius: 0.4rem;
+  color: $primary;
+  border: none;
+  background-color: $white;
+}
