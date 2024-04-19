@@ -1,0 +1,56 @@
+@import "../colors";
+
+.footer {
+  padding-block: 8rem;
+  background-color: $primary;
+  .container-footer {
+    max-width: 120rem;
+    margin-inline: auto;
+  }
+
+  &_content {
+    display: grid;
+    grid-column-gap: 18.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      &-h {
+        margin-bottom: 3rem;
+        color: $white;
+      }
+      &-lists {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        li {
+          font-weight: lighter;
+          font-size: 1.6rem;
+          color: $white;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      &-imgwr {
+        max-width: 18.6rem;
+        max-height: auto;
+        margin-bottom: 4rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      &-txt {
+        min-width: 27.8rem;
+        line-height: 16 /28;
+        font-weight: lighter;
+        color: $white;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
