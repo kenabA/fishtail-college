@@ -3,6 +3,31 @@
 .hero {
   background-color: $white-1;
   position: relative;
+  &_blob {
+    &--wrapper--2 {
+      position: absolute;
+      max-width: 40.1rem;
+      max-height: auto;
+      top: 5%;
+      right: 10%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &--wrapper {
+      position: absolute;
+      max-width: 47.2rem;
+      max-height: auto;
+      bottom: 2%;
+      right: 20%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
   &_tridots {
     &--wrapper {
       position: absolute;

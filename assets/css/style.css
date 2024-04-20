@@ -246,6 +246,28 @@ html {
   background-color: #fafafa;
   position: relative;
 }
+.hero_blob--wrapper--2 {
+  position: absolute;
+  max-width: 40.1rem;
+  max-height: auto;
+  top: 5%;
+  right: 10%;
+}
+.hero_blob--wrapper--2 img {
+  height: 100%;
+  width: 100%;
+}
+.hero_blob--wrapper {
+  position: absolute;
+  max-width: 47.2rem;
+  max-height: auto;
+  bottom: 2%;
+  right: 20%;
+}
+.hero_blob--wrapper img {
+  height: 100%;
+  width: 100%;
+}
 .hero_tridots--wrapper {
   position: absolute;
   bottom: 0%;
