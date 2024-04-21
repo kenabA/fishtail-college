@@ -41,6 +41,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     &--detail {
+      justify-self: center;
       &-p {
         color: $white;
         font-size: 2.4rem;
@@ -51,7 +52,7 @@
         &::after {
           position: absolute;
           top: -25%;
-          right: 20%;
+          right: -30%;
           content: "+";
         }
       }

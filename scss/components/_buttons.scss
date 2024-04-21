@@ -1,6 +1,7 @@
 @import "../colors";
 
 .btn-primary {
+  white-space: nowrap;
   font-size: 1.6rem;
   padding: 1.2rem 2.8rem;
   border-radius: 0.4rem;
@@ -10,6 +11,7 @@
 }
 
 .btn-secondary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 1.2rem 2.4rem;
@@ -19,6 +21,7 @@
 }
 
 .btn-tertiary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 1.2rem;
@@ -27,6 +30,7 @@
 }
 
 .btn-quaternary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 2rem 4.2rem;
@@ -37,6 +41,7 @@
 }
 
 .btn-quinary {
+  white-space: nowrap;
   font-size: 1.6rem;
   padding: 1.2rem 2.8rem;
   border-radius: 0.4rem;

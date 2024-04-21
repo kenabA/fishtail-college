@@ -111,7 +111,100 @@
 }
 @media (max-width: 120em) {
   html {
-    font-size: 44.25% !important;
+    font-size: 60.5% !important;
+  }
+}
+@media (max-width: 99.0625em) {
+  html {
+    font-size: 48.5% !important;
+  }
+}
+@media (max-width: 79.4375em) {
+  html {
+    font-size: 44.5% !important;
+  }
+}
+@media (max-width: 72.875em) {
+  html {
+    font-size: 36.5% !important;
+  }
+}
+@media (max-width: 53.5em) {
+  .hero_lightning--wrapper {
+    right: 16% !important;
+    bottom: 0% !important;
+  }
+  .hero_arrow--wrapper {
+    width: 12rem !important;
+    left: 47%;
+    top: -54%;
+  }
+  .hero_content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero_content--mid-btn {
+    justify-content: center;
+  }
+  .hero_content--mid-btn button {
+    flex-grow: 1;
+  }
+  .hero_content--left {
+    flex-direction: row-reverse;
+    gap: 5.4rem;
+  }
+  .apply_squiggle--wrapper {
+    display: none;
+  }
+  .apply_content--cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partners_content {
+    text-align: center;
+    grid-row-gap: 10rem;
+    grid-template-columns: 1fr !important;
+  }
+  .partners_content--logos {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .partners_content--logos-wrapper {
+    justify-self: center;
+  }
+  .partners_content--details p {
+    margin-inline: auto;
+  }
+  .features_content--detail-p-last::after {
+    top: -25%;
+    right: -14% !important;
+  }
+  .features_circle--wrapper {
+    left: 6% !important;
+  }
+  .cta_content--details {
+    grid-template-columns: 1fr !important;
+  }
+  .cta_content--details:nth-child(2) .cta_content--details-imgWr {
+    order: 0;
+  }
+  .cta_content--details-imgWr {
+    justify-self: center;
+  }
+  .cta_content--details-text {
+    text-align: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 45.125em) {
+  .features_circle--wrapper {
+    left: 2% !important;
+  }
+  .course .container-course {
+    width: 90%;
+  }
+  .course_content--wrapper figure:last-child {
+    border: 2px solid yellow;
   }
 }
 .fa-user {
@@ -166,6 +259,7 @@ html {
 }
 
 .btn-primary {
+  white-space: nowrap;
   font-size: 1.6rem;
   padding: 1.2rem 2.8rem;
   border-radius: 0.4rem;
@@ -175,6 +269,7 @@ html {
 }
 
 .btn-secondary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 1.2rem 2.4rem;
@@ -184,6 +279,7 @@ html {
 }
 
 .btn-tertiary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 1.2rem;
@@ -192,6 +288,7 @@ html {
 }
 
 .btn-quaternary {
+  white-space: nowrap;
   font-size: 1.6rem;
   background-color: unset;
   padding: 2rem 4.2rem;
@@ -202,6 +299,7 @@ html {
 }
 
 .btn-quinary {
+  white-space: nowrap;
   font-size: 1.6rem;
   padding: 1.2rem 2.8rem;
   border-radius: 0.4rem;
@@ -273,7 +371,7 @@ html {
   bottom: 0%;
   right: 50%;
   transform: translateX(50%);
-  width: 30rem !important;
+  width: 30rem;
   height: auto;
 }
 .hero_tridots--wrapper img {
@@ -285,7 +383,7 @@ html {
 .hero_arrow--wrapper {
   position: absolute;
   bottom: 10%;
-  width: 15rem !important;
+  width: 15rem;
   height: auto;
 }
 .hero_arrow--wrapper img {
@@ -425,7 +523,6 @@ html {
   color: #575757;
   font-size: 1.6rem;
   line-height: 2.56rem;
-  font-weight: lighter;
   margin-bottom: 2.8rem;
 }
 .apply_content--cta-details ul {
@@ -452,7 +549,9 @@ html {
 }
 .apply_content--cards {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 .apply_content--card {
   border-radius: 1.2rem;
@@ -572,6 +671,9 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.features_content--detail {
+  justify-self: center;
+}
 .features_content--detail-p {
   color: #ffffff;
   font-size: 2.4rem;
@@ -583,7 +685,7 @@ html {
 .features_content--detail-p-last::after {
   position: absolute;
   top: -25%;
-  right: 20%;
+  right: -30%;
   content: "+";
 }
 
@@ -681,15 +783,11 @@ html {
   margin-bottom: 4rem;
   min-width: 37.5rem;
 }
-.course_content--wrapper-imgWr {
-  max-width: 43.2rem;
-  max-height: auto;
-}
 .course_content--wrapper-imgWr img {
   object-fit: contain;
   object-position: center;
-  width: 100%;
-  height: 100%;
+  width: 43.2rem;
+  height: auto;
 }
 
 .news .container-news {
