@@ -33,15 +33,56 @@
   }
 }
 
-// @media (max-width: 59.9375em) {
-//   html {
-//     font-size: 32.5% !important;
-//   }
-// }
-
 @media (max-width: 53.5em) {
+  // GENERAL BTN
+  button {
+    font-size: 2.4rem !important;
+  }
+
+  // HEADER SECTION
+  .header {
+    position: relative;
+    &_content {
+      &--nav {
+        ul {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .header_content--nav {
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-btn-open .header-content--nav {
+    opacity: 0.95;
+    transform: translateX(0%);
+    pointer-events: auto;
+    visibility: visible;
+    scroll-behavior: smooth;
+  }
+
   // HERO SECTION
   .hero {
+    h1 {
+      font-size: 5.5rem;
+    }
+
     &_lightning--wrapper {
       right: 16% !important;
       bottom: 0% !important;
@@ -101,6 +142,7 @@
       }
     }
   }
+
   // FEATURES SECTION
   .features {
     &_content {
@@ -134,9 +176,53 @@
       justify-self: center;
     }
   }
+
+  // COURSE SECTION
+  .course {
+    .container-course {
+      max-width: 90% !important;
+    }
+  }
+
+  // NEWS SECTION
+  .news {
+    .container-news {
+      max-width: 90% !important;
+    }
+
+    &_content {
+      &--details {
+        &-body {
+          &-cards {
+            grid-template-columns: 1fr 1fr !important;
+            grid-row-gap: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  // FOOTER SECTION
+  .footer {
+    .container-footer {
+      max-width: 90% !important;
+    }
+    &_content {
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-row-gap: 9rem;
+    }
+  }
 }
 
 @media (max-width: 45.125em) {
+  .hero {
+    &_arrow--wrapper {
+      width: 12rem !important;
+      left: 45%;
+      top: -54%;
+    }
+  }
+
   // FEATURES SECTION
   .features {
     &_circle--wrapper {
@@ -144,20 +230,117 @@
     }
   }
 
-  .course {
-    .container-course {
-      width: 90%;
+  // .course {
+  //   &_content {
+  //     &--wrapper {
+  //       // LEFT TO FILL IN HERE
+  //     }
+  //   }
+  // }
+}
+
+// DEFAULT MOBILE DEVICE SIZE
+@media (max-width: 32em) {
+  html {
+    font-size: 36.5% !important;
+  }
+
+  .btn-primary {
+    padding: 2.4rem 2.8rem !important;
+  }
+
+  // HERO SECTION
+  .hero {
+    &_arrow--wrapper {
+      width: 8rem !important;
+      left: 43%;
+      top: -58%;
+    }
+  }
+
+  // APPLY SECTION
+  .apply {
+    .container-apply {
+      max-width: 90% !important;
     }
     &_content {
-      &--wrapper {
-        figure {
-          &:last-child {
-            border: 2px solid yellow;
+      &--card {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  // PARTNERS SECTION
+  .container-partners {
+    max-width: 90% !important;
+  }
+
+  // FEATURES SECTION
+  .features {
+    .container-features {
+      max-width: 90% !important;
+    }
+
+    &_half {
+      &-circle {
+        &--wrapper {
+          right: 0% !important;
+          max-width: 16rem !important;
+        }
+      }
+    }
+    &_content {
+      grid-template-columns: 1fr !important;
+      grid-row-gap: 3.2rem;
+      flex-direction: column;
+
+      &--detail {
+        &:first-child {
+          justify-self: center;
+        }
+        &:nth-child(2) {
+          justify-self: center;
+        }
+        &:last-child {
+          justify-self: center;
+        }
+        &-p {
+          &-last {
+            &::after {
+              display: none;
+            }
           }
         }
       }
     }
   }
+
+  // CTA SECTION
+  .cta {
+    .container-cta {
+      max-width: 90% !important;
+    }
+  }
+
+  // FOOTER SECTION
+  .footer {
+    &_content {
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-row-gap: 9rem;
+    }
+  }
 }
 
-// 578 MA BIGRIRAKO XA
+@media (max-width: 24.125em) {
+  .news_content--details-body-cards {
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 4.8rem !important;
+  }
+}
+
+// SMALLER MOBILE DEVICE SIZE
+@media (max-width: 19.2em) {
+  button {
+    font-size: 2rem !important;
+  }
+}
