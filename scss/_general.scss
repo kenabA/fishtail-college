@@ -7,10 +7,6 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-body {
-  overflow-x: hidden !important;
-}
-
 .container {
   max-width: 85%;
   margin: auto;
@@ -107,4 +103,16 @@ body {
 
 .footer-link {
   color: $white;
+}
+
+.btn-mobile-nav {
+  z-index: 2;
+}
+
+.icon-mobile-nav[name="open"] {
+  display: block;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
 }

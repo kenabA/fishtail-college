@@ -31,5 +31,14 @@
         text-decoration: none;
       }
     }
+
+    .icon-mobile-nav {
+      &[name="close"] {
+        display: none;
+      }
+      &[name="open"] {
+        display: block;
+      }
+    }
   }
 }

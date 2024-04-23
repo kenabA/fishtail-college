@@ -52,29 +52,43 @@
   }
 
   .header_content--nav {
+    z-index: 1;
     background-color: white;
     position: absolute;
     top: 0%;
     left: 0%;
     height: 100vh;
     width: 100%;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
-
-    transform: translateX(100%);
-    opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(100%);
+    ul {
+      flex-direction: column;
+    }
   }
 
-  .nav-btn-open .header-content--nav {
-    opacity: 0.95;
-    transform: translateX(0%);
-    pointer-events: auto;
-    visibility: visible;
-    scroll-behavior: smooth;
+  .nav-btn-open {
+    .icon-mobile-nav {
+      &[name="close"] {
+        display: block;
+      }
+      &[name="open"] {
+        display: none;
+      }
+    }
+
+    .header_content--nav {
+      opacity: 0.95;
+      transform: translateX(0%);
+      pointer-events: auto;
+      visibility: visible;
+      scroll-behavior: smooth;
+    }
   }
 
   // HERO SECTION

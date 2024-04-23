@@ -6,10 +6,6 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-body {
-  overflow-x: hidden !important;
-}
-
 .container {
   max-width: 85%;
   margin: auto;
@@ -104,6 +100,18 @@ body {
   color: #ffffff;
 }
 
+.btn-mobile-nav {
+  z-index: 2;
+}
+
+.icon-mobile-nav[name=open] {
+  display: block;
+}
+
+.icon-mobile-nav[name=close] {
+  display: none;
+}
+
 @media (min-width: 120em) {
   html {
     font-size: 62.5%;
@@ -144,22 +152,32 @@ body {
     font-size: 2.4rem;
   }
   .header_content--nav {
+    z-index: 1;
     background-color: white;
     position: absolute;
     top: 0%;
     left: 0%;
     height: 100vh;
     width: 100%;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
-    transform: translateX(100%);
-    opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(100%);
   }
-  .nav-btn-open .header-content--nav {
+  .header_content--nav ul {
+    flex-direction: column;
+  }
+  .nav-btn-open .icon-mobile-nav[name=close] {
+    display: block;
+  }
+  .nav-btn-open .icon-mobile-nav[name=open] {
+    display: none;
+  }
+  .nav-btn-open .header_content--nav {
     opacity: 0.95;
     transform: translateX(0%);
     pointer-events: auto;
@@ -457,6 +475,12 @@ html {
 .header_content--menu-link {
   color: #141517;
   text-decoration: none;
+}
+.header_content .icon-mobile-nav[name=close] {
+  display: none;
+}
+.header_content .icon-mobile-nav[name=open] {
+  display: block;
 }
 
 .hero {
