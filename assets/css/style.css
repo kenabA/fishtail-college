@@ -6,6 +6,10 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 .container {
   max-width: 85%;
   margin: auto;
@@ -172,10 +176,10 @@
     flex-direction: column;
   }
   .nav-btn-open .icon-mobile-nav[name=close] {
-    display: block;
+    display: block !important;
   }
   .nav-btn-open .icon-mobile-nav[name=open] {
-    display: none;
+    display: none !important;
   }
   .nav-btn-open .header_content--nav {
     opacity: 0.95;

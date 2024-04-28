@@ -7,6 +7,10 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 .container {
   max-width: 85%;
   margin: auto;

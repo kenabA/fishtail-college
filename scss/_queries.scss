@@ -75,10 +75,10 @@
   .nav-btn-open {
     .icon-mobile-nav {
       &[name="close"] {
-        display: block;
+        display: block !important;
       }
       &[name="open"] {
-        display: none;
+        display: none !important;
       }
     }
 
@@ -243,14 +243,6 @@
       left: 2% !important;
     }
   }
-
-  // .course {
-  //   &_content {
-  //     &--wrapper {
-  //       // LEFT TO FILL IN HERE
-  //     }
-  //   }
-  // }
 }
 
 // DEFAULT MOBILE DEVICE SIZE
